@@ -6,22 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.teamwork.shoesellingapplication.databinding.ActivitySignInBinding;
+import com.teamwork.shoesellingapplication.databinding.ActivitySignUpBinding;
 
-public class SignIn extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
-    ActivitySignInBinding binding;
+    ActivitySignUpBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivitySignInBinding.inflate(getLayoutInflater());
+        binding=ActivitySignUpBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.signupbutton.setOnClickListener(new View.OnClickListener() {
+        binding.signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SignIn.this,SignUp.class));
+                startActivity(new Intent(SignUp.this,SignIn.class));
             }
         });
     }

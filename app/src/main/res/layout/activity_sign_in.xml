@@ -88,7 +88,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signinbutton"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_below="@+id/linearLayout"
@@ -103,7 +103,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/signinbutton"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:gravity="center"
@@ -120,7 +120,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="Sign in with google"
-
             android:textSize="18sp" />
     </LinearLayout>
 
